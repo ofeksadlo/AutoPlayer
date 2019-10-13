@@ -16,6 +16,7 @@ Next time you run the player. It will ask if you want to continue watching the v
 
 If you choose a video that's name includes for example "S01E01". The player will try to find the next eposide.
 In the folder of the clip you chose.
+And will play it automatically as soon as the eposide finishes.
 
 # Why I made this Player
 I watch 2 series almost all the time which is The Big Bang Theory and How I Met Your Mother.
