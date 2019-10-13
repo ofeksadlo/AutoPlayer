@@ -1,0 +1,14 @@
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\bin\Debug\AutoPlayer.exe.config
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\bin\Debug\AutoPlayer.exe
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\bin\Debug\AutoPlayer.pdb
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.mainForm.resources
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.Properties.Resources.resources
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.csproj.GenerateResource.cache
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.exe
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.pdb
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\bin\Debug\Interop.WMPLib.dll
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\Interop.WMPLib.dll
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.csproj.ResolveComReference.cache
+C:\Users\ofeky\source\repos\AutoPlayer\AutoPlayer\obj\Debug\AutoPlayer.csprojAssemblyReference.cache
