@@ -11,7 +11,7 @@ It's saves the last position you exited the video if you choose to. And changes 
 # How to use this Player
 Well first you launch the software not the video.
 Then you choose the video you would like to see. If you exit the player while the clip is running.
-The player will pop a message box. That asks you if you want to save the position of clip.
+The player will pop a message box. That asks you if you want to save the position of the clip.
 Next time you run the player. It will ask if you want to continue watching the video you were seen.
 
 If you choose a video that's name includes for example "S01E01". The player will try to find the next eposide.
