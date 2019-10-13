@@ -28,5 +28,5 @@ So to solve this problems I made this software.
 # Future plans
 * For now the player stores only 1 last played time. Next it will have a database which will store any clip
 that will be played.
-* The player using the database it stores will save last watched eposide per series.
+* The player using the database will save last watched eposide per series.
 * The player will automatically switch to next season eposide.
