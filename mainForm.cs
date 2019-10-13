@@ -99,19 +99,20 @@ namespace AutoPlayer
 
         private void axWindowsMediaPlayer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            
+
             if (axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && nextEposidePath != "")
             {
                 clipFinished = true;
                 axWindowsMediaPlayer.fullScreen = false;
                 Application.Exit();
             }
-            else if(axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && nextEposidePath == "")
+            else if (axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && nextEposidePath == "")
             {
+                clipFinished = true;
+                axWindowsMediaPlayer.fullScreen = false;
                 Settings.dontSave();
-                Application.Restart();
+                Application.Exit();
             }
         }
-
     }
 }
