@@ -17,7 +17,7 @@ namespace AutoPlayer
         {
             InitializeComponent();
         }
-
+        string nextEposidePath;
         private void mainForm_Load(object sender, EventArgs e)
         {
             //uiMode means - User Interface Mode. The program will create a new file called uiMode in wich you can change the value 1 which means full User Interface.
@@ -73,11 +73,12 @@ namespace AutoPlayer
                     Application.Exit();
                 }
             }
+            nextEposidePath = Series.getNextEposidePath(openFileDialog.FileName);
         }
         bool clipFinished = false;// Determines if the video is finished.
         private void mainForm_FormClosing(object sender, FormClosingEventArgs e)// In a case of the client closing the player we will ask the client weather he want to save
         {//                                                                        the time position.
-            if (axWindowsMediaPlayer.URL != "" && clipFinished == false && Series.Detect(axWindowsMediaPlayer.URL) == false)
+            if (axWindowsMediaPlayer.URL != "" && clipFinished == false && nextEposidePath == "")
             {
                 if (MessageBox.Show("לשמור לך תזמן צפייה אחי?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -89,16 +90,26 @@ namespace AutoPlayer
                     Settings.dontSave();
                 }
             }
+            else if(nextEposidePath != "")
+            {
+                Series.nextEposide(nextEposidePath);
+            }
             
         }
 
         private void axWindowsMediaPlayer_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
             
-            if (axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && Series.Detect(axWindowsMediaPlayer.URL,false) == false)
+            if (axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && nextEposidePath != "")
             {
                 clipFinished = true;
                 axWindowsMediaPlayer.fullScreen = false;
+                Application.Exit();
+            }
+            else if(axWindowsMediaPlayer.playState == WMPLib.WMPPlayState.wmppsMediaEnded && nextEposidePath == "")
+            {
+                Settings.dontSave();
+                Application.Restart();
             }
         }
 
