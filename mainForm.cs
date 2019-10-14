@@ -1,13 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace AutoPlayer
 {
@@ -37,7 +30,7 @@ namespace AutoPlayer
                 File.WriteAllText(Environment.CurrentDirectory + "\\uiMode.ini", "1");//The starting value is 1 but anything except 0 will do the same.
             }// The only situation the Saved setting will be true and LastPlayed will be 0. Is when an eposide has been changed automatically.
             if (AutoPlayer.Properties.Settings.Default.Saved == true && AutoPlayer.Properties.Settings.Default.LastPlayed == 0)
-            {//In this case the client is watching a series. And we want the new eposide will start immediately.
+            {//In this case the client is watching a series. And we want the new eposide to start immediately.
                 axWindowsMediaPlayer.Ctlcontrols.currentPosition = AutoPlayer.Properties.Settings.Default.LastPlayed;
                 axWindowsMediaPlayer.URL = AutoPlayer.Properties.Settings.Default.Path;
                 this.Text = axWindowsMediaPlayer.URL;
