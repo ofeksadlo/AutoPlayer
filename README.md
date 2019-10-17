@@ -30,3 +30,4 @@ So to solve this problems I made this software.
 that will be played.
 * The player using the database will save last watched eposide per series.
 * The player will automatically switch to next season eposide.
+* Added button for next eposide and previous eposide.
