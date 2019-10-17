@@ -6,7 +6,7 @@ You are watching a series from your laptop. And you tiered of the need to switch
 You closed the eposide by mistake and forgot where you stopped.
 Well this software is exactlly for this 2 situations.
 
-It's saves the last position you exited the video if you choose to. And changes eposides automatically if it detect you are watching an eposide from a series.
+It's saves the last position of the video you watched if you choose to. And changes eposides automatically if it detect you are watching an eposide from a series.
 
 # How to use this Player
 Well first you launch the software not the video.
