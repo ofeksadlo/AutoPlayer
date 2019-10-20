@@ -33,3 +33,5 @@ So to solve this problems I made this software.
 
 # Future plans
 * The player will automatically switch to next season eposide.
+* The player will have a settings window there you can change the UI mode.
+And set keywords for next eposide searching (The default is S01E01 using the setting you will be able to add more).
