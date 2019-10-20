@@ -37,30 +37,6 @@ namespace AutoPlayer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Path {
-            get {
-                return ((string)(this["Path"]));
-            }
-            set {
-                this["Path"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Saved {
-            get {
-                return ((bool)(this["Saved"]));
-            }
-            set {
-                this["Saved"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\ofeky\\Downloads\\The.Big.Bang.Theory.S01E08.720p.HDTV.X264-MRSK - Copy.mp" +
             "4,0;C:\\Users\\ofeky\\Downloads\\The.Big.Bang.Theory.S01E010.720p.HDTV.X264-MRSK - C" +
             "opy.mp4,44")]
